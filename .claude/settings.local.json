@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir:*)",
+      "Bash(git init:*)",
+      "Bash(git config:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m \"$(cat <<''EOF''\nInitial commit - Le Monde de Gabriel Website\n\n✨ Site web complet pour l''opéra POP \"Le Monde de Gabriel\"\n\n🎨 Fonctionnalités:\n- Design ultra-moderne avec thème sombre futuriste\n- Navigation responsive avec menu mobile\n- Section Hero avec animations de particules et papillon\n- Galerie d''inspirations avec cadres style musée et effet vitre\n- 10 films/œuvres d''inspiration avec vraies images\n- Effet de lumière traversant la vitre (300% agrandi)\n- 18 chansons listées avec mise en avant du single\n- Informations complètes sur l''équipe et le projet\n- Liens réseaux sociaux actifs\n- Logos partenaires (Meet Mercy Production & Stop Harcèlement Flow)\n- Animations fluides et effets visuels spectaculaires\n- 100% responsive (mobile, tablette, desktop)\n\n🎭 À propos:\nPremier opéra POP sur le harcèlement scolaire\nPar Anne-Chrystel Mercy - Meet Mercy Production\nSoutient l''association Stop Harcèlement Flow\n\n🚀 Generated with Claude Code\nhttps://claude.com/claude-code\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")",
+      "Bash(gh --version:*)",
+      "Bash(gh auth:*)",
+      "Bash(gh repo create:*)",
+      "Bash(gh api:*)",
+      "Bash(git commit:*)",
+      "Bash(git push)",
+      "Bash(gh repo edit:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

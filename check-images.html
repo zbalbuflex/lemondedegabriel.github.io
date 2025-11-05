@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vérification des Images - Le Monde de Gabriel</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #0a0e27 0%, #1a1f3a 100%);
+            color: white;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5rem;
+            color: #00d4ff;
+        }
+
+        .intro {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 4px solid #00d4ff;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .image-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            border: 2px solid rgba(0, 212, 255, 0.3);
+        }
+
+        .image-card.missing {
+            border-color: #ff006e;
+            background: rgba(255, 0, 110, 0.1);
+        }
+
+        .image-card.found {
+            border-color: #00ff00;
+            background: rgba(0, 255, 0, 0.1);
+        }
+
+        .image-name {
+            font-weight: bold;
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            color: #00d4ff;
+        }
+
+        .image-status {
+            padding: 5px 10px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-size: 0.9rem;
+        }
+
+        .status-missing {
+            background: #ff006e;
+            color: white;
+        }
+
+        .status-found {
+            background: #00ff00;
+            color: #000;
+        }
+
+        .image-info {
+            font-size: 0.9rem;
+            color: #b0b0b0;
+            margin: 5px 0;
+        }
+
+        .preview {
+            margin-top: 15px;
+            width: 100%;
+            height: 200px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        .preview img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+        }
+
+        .placeholder {
+            color: #666;
+            font-style: italic;
+        }
+
+        .summary {
+            background: rgba(0, 212, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .progress {
+            width: 100%;
+            height: 30px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            overflow: hidden;
+            margin-top: 15px;
+        }
+
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(90deg, #00d4ff, #00ff00);
+            transition: width 0.5s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🖼️ Vérification des Images</h1>
+
+        <div class="intro">
+            <h2>📋 Instructions</h2>
+            <p>Cette page vous aide à vérifier quelles images du PDF ont été ajoutées au projet.</p>
+            <p><strong>Consultez le fichier GUIDE-IMAGES.md</strong> pour savoir comment extraire et ajouter les images manquantes.</p>
+        </div>
+
+        <div class="summary">
+            <h2>📊 Résumé</h2>
+            <p><span id="found-count">0</span> / <span id="total-count">0</span> images trouvées</p>
+            <div class="progress">
+                <div class="progress-bar" id="progress-bar">0%</div>
+            </div>
+        </div>
+
+        <div class="grid" id="images-grid"></div>
+    </div>
+
+    <script>
+        const images = [
+            {
+                name: 'hero-main.jpg',
+                description: 'Image principale du Hero (casiers et porte)',
+                page: 'Page 1 du PDF'
+            },
+            {
+                name: 'moulin-rouge.jpg',
+                description: 'Affiche Moulin Rouge',
+                page: 'Page 14 du PDF'
+            },
+            {
+                name: 'grease.jpg',
+                description: 'Affiche Grease',
+                page: 'Page 14 du PDF'
+            },
+            {
+                name: 'west-side-story.jpg',
+                description: 'Affiche West Side Story',
+                page: 'Page 14 du PDF'
+            },
+            {
+                name: 'cercle-poetes.jpg',
+                description: 'Affiche Le Cercle des Poètes Disparus',
+                page: 'Page 14 du PDF'
+            },
+            {
+                name: 'cyrano.jpg',
+                description: 'Affiche Cyrano de Bergerac',
+                page: 'Page 14 du PDF'
+            },
+            {
+                name: 'star-wars.jpg',
+                description: 'Affiche Star Wars',
+                page: 'Page 14 du PDF'
+            },
+            {
+                name: 'suzume.jpg',
+                description: 'Affiche Suzume',
+                page: 'Page 14 du PDF'
+            },
+            {
+                name: 'your-name.jpg',
+                description: 'Affiche Your Name',
+                page: 'Page 14 du PDF'
+            },
+            {
+                name: 'one-piece-red.jpg',
+                description: 'Affiche One Piece Red',
+                page: 'Page 14 du PDF'
+            },
+            {
+                name: 'stop-single.jpg',
+                description: 'Visuel "Si je dis STOP tu fais pas"',
+                page: 'Page 19 du PDF'
+            },
+            {
+                name: 'logo-meet-mercy.png',
+                description: 'Logo Meet Mercy Production',
+                page: 'Dernière page du PDF'
+            },
+            {
+                name: 'logo-stop-harcelement.png',
+                description: 'Logo Stop Harcèlement Flow',
+                page: 'Dernière page du PDF'
+            }
+        ];
+
+        let foundCount = 0;
+        const totalCount = images.length;
+
+        document.getElementById('total-count').textContent = totalCount;
+
+        const grid = document.getElementById('images-grid');
+
+        images.forEach(image => {
+            const card = document.createElement('div');
+            card.className = 'image-card';
+
+            const imagePath = `images/${image.name}`;
+
+            // Créer un élément img pour tester si l'image existe
+            const testImg = new Image();
+            testImg.onload = function() {
+                card.classList.add('found');
+                foundCount++;
+                updateSummary();
+                card.innerHTML = `
+                    <div class="image-name">${image.name}</div>
+                    <div class="image-status status-found">✅ Trouvée</div>
+                    <div class="image-info">${image.description}</div>
+                    <div class="image-info">📄 ${image.page}</div>
+                    <div class="preview">
+                        <img src="${imagePath}" alt="${image.name}">
+                    </div>
+                `;
+            };
+
+            testImg.onerror = function() {
+                card.classList.add('missing');
+                updateSummary();
+                card.innerHTML = `
+                    <div class="image-name">${image.name}</div>
+                    <div class="image-status status-missing">❌ Manquante</div>
+                    <div class="image-info">${image.description}</div>
+                    <div class="image-info">📄 ${image.page}</div>
+                    <div class="preview">
+                        <div class="placeholder">Image non trouvée</div>
+                    </div>
+                `;
+            };
+
+            testImg.src = imagePath;
+
+            grid.appendChild(card);
+        });
+
+        function updateSummary() {
+            document.getElementById('found-count').textContent = foundCount;
+            const percentage = Math.round((foundCount / totalCount) * 100);
+            const progressBar = document.getElementById('progress-bar');
+            progressBar.style.width = percentage + '%';
+            progressBar.textContent = percentage + '%';
+        }
+    </script>
+</body>
+</html>

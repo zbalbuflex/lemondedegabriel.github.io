@@ -1,0 +1,20 @@
+Instructions pour ajouter les images
+=====================================
+
+Ce dossier doit contenir les images suivantes extraites du PDF :
+
+1. hero-main.jpg - L'image principale avec les casiers (Page 1)
+2. moulin-rouge.jpg - Logo/affiche du film
+3. grease.jpg - Logo/affiche du film
+4. west-side-story.jpg - Logo/affiche du film
+5. cercle-poetes.jpg - Logo/affiche du film
+6. cyrano.jpg - Logo/affiche du film
+7. star-wars.jpg - Logo/affiche du film
+8. suzume.jpg - Logo/affiche du film
+9. your-name.jpg - Logo/affiche du film
+10. one-piece-red.jpg - Logo/affiche du film
+11. logo-meet-mercy.png - Logo Meet Mercy Production
+12. logo-stop-harcelement.png - Logo Stop Harcèlement Flow
+13. stop-single.jpg - Visuel du single "Si je dis STOP tu fais pas"
+
+Voir le README.md à la racine du projet pour les instructions détaillées d'extraction.

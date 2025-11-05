@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Monde de Gabriel - Opéra POP</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">LE MONDE DE GABRIEL</span>
+            </div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link">Accueil</a></li>
+                <li><a href="#synopsis" class="nav-link">Synopsis</a></li>
+                <li><a href="#contexte" class="nav-link">Contexte</a></li>
+                <li><a href="#public" class="nav-link">Public</a></li>
+                <li><a href="#chansons" class="nav-link">Chansons</a></li>
+                <li><a href="#inspirations" class="nav-link">Inspirations</a></li>
+                <li><a href="#equipe" class="nav-link">Équipe</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background">
+            <div class="hero-image"></div>
+            <div class="hero-overlay"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="butterfly-container">
+                <svg class="butterfly" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M50,50 Q30,30 20,40 Q10,50 20,60 Q30,70 50,50" fill="#00d4ff" opacity="0.8"/>
+                    <path d="M50,50 Q70,30 80,40 Q90,50 80,60 Q70,70 50,50" fill="#00d4ff" opacity="0.8"/>
+                </svg>
+            </div>
+            <h1 class="hero-title">LE MONDE DE GABRIEL</h1>
+            <p class="hero-subtitle">Opéra POP</p>
+            <p class="hero-tagline">Une fresque musicale et sociétale<br>entre réalité et fantastique</p>
+            <div class="hero-buttons">
+                <a href="#synopsis" class="btn btn-primary">Découvrir</a>
+                <a href="#contact" class="btn btn-secondary">Nous contacter</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Synopsis Section -->
+    <section id="synopsis" class="section synopsis">
+        <div class="container">
+            <h2 class="section-title">Synopsis</h2>
+            <div class="section-subtitle">Le Monde de Gabriel</div>
+
+            <div class="content-grid">
+                <div class="content-card fade-in">
+                    <div class="card-icon">🎭</div>
+                    <p>Gabriel, un lycéen de 17 ans, arrive dans un nouvel établissement, espérant y trouver sa place. Mais il découvre rapidement un univers déjà structuré, où chaque groupe a ses propres codes et dynamiques.</p>
+                </div>
+
+                <div class="content-card fade-in">
+                    <div class="card-icon">👥</div>
+                    <p>Accueilli par Sakura, la déléguée des élèves, Gabriel fait la connaissance de ses camarades : Tom, Nathan, Anaïs, Julia, et Kenzo, ce dernier affichant dès le départ une hostilité flagrante.</p>
+                </div>
+
+                <div class="content-card fade-in">
+                    <div class="card-icon">🎨</div>
+                    <p>Alors que Gabriel tente de s'adapter, Sakura donne une présentation en arts plastiques sur les mangas et animes, un écho subtil à la quête d'identité et d'imaginaire.</p>
+                </div>
+
+                <div class="content-card fade-in">
+                    <div class="card-icon">⚡</div>
+                    <p>Lors d'un jeu de popularité malsain, Kenzo pousse l'intimidation jusqu'à blesser Gabriel à la main. Cet événement déclenche une plongée inattendue dans l'imaginaire de Gabriel, son propre Isekai.</p>
+                </div>
+
+                <div class="content-card fade-in">
+                    <div class="card-icon">🌟</div>
+                    <p>Dans cet univers parallèle, Gabriel rencontre Dame Michiko, une sage énigmatique, et Hotaru, un esprit lumineux. Ces guides extraordinaires l'aident à explorer ses émotions et à découvrir sa valeur intrinsèque.</p>
+                </div>
+
+                <div class="content-card fade-in">
+                    <div class="card-icon">✨</div>
+                    <p>Transformé par ce voyage intérieur, Gabriel revient dans le monde réel avec une confiance renouvelée. Il a appris à s'aimer, à ignorer les jugements destructeurs, et à reconnaître qu'il mérite d'être aimé pour ce qu'il est.</p>
+                </div>
+            </div>
+
+            <div class="isekai-note">
+                <strong>Isekai*</strong> : terme japonais signifiant littéralement "Autre monde"
+            </div>
+        </div>
+    </section>
+
+    <!-- Contexte Section -->
+    <section id="contexte" class="section contexte">
+        <div class="container">
+            <h2 class="section-title">Contexte</h2>
+
+            <div class="context-wrapper">
+                <div class="context-item fade-in">
+                    <h3>📅 Époque</h3>
+                    <p>L'histoire se déroule à notre époque contemporaine, dans un monde familier aux spectateurs. Les réseaux sociaux, les smartphones, et les jeux vidéo rythment la vie des adolescents, influençant leurs interactions et leurs rivalités.</p>
+                </div>
+
+                <div class="context-item fade-in">
+                    <h3>🏫 Lieu</h3>
+                    <p>Le récit prend place dans un lycée français moderne, un microcosme où se croisent adolescents aux personnalités et aspirations variées.</p>
+
+                    <div class="location-details">
+                        <div class="location-card">
+                            <h4>Les couloirs et la cour</h4>
+                            <p>Lieu d'enjeux et d'épreuves sociales, où la hiérarchie implicite se manifeste à travers des provocations.</p>
+                        </div>
+
+                        <div class="location-card">
+                            <h4>Les salles de classe</h4>
+                            <p>Espaces d'apprentissage et de réflexion, mais aussi de moments d'apaisement.</p>
+                        </div>
+
+                        <div class="location-card highlight">
+                            <h4>Le monde imaginaire (Isekai)</h4>
+                            <p>Un univers fantastique et introspectif, à la fois sombre et lumineux. Cet espace symbolise l'esprit de Gabriel, inspiré des codes visuels des mangas et des animes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="context-item fade-in">
+                    <h3>🎭 Atmosphère</h3>
+                    <p>La dualité entre la réalité brute du lycée et l'évasion onirique du monde imaginaire crée une tension dramatique captivante. Le quotidien du lycée est marqué par des interactions parfois cruelles, mais aussi des moments de complicité et de solidarité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Public Cible Section -->
+    <section id="public" class="section public-cible">
+        <div class="container">
+            <h2 class="section-title">Public Cible</h2>
+
+            <div class="audience-grid">
+                <div class="audience-card fade-in">
+                    <div class="audience-icon">👦👧</div>
+                    <h3>Adolescents et pré-adolescents (10-18 ans)</h3>
+                    <p>Le récit, ancré dans l'univers d'un lycée, parle directement aux jeunes qui se retrouveront dans les thématiques abordées : quête d'identité, pression sociale, harcèlement scolaire, et acceptation de soi.</p>
+                </div>
+
+                <div class="audience-card fade-in">
+                    <div class="audience-icon">🎓</div>
+                    <h3>Jeunes adultes (18-25 ans)</h3>
+                    <p>Ce public pourra revivre des expériences similaires à celles de leurs années de lycée, tout en appréciant les dimensions plus symboliques et introspectives de l'Isekai.</p>
+                </div>
+
+                <div class="audience-card fade-in">
+                    <div class="audience-icon">👨‍👩‍👧‍👦</div>
+                    <h3>Parents et éducateurs</h3>
+                    <p>Le spectacle offre un éclairage précieux sur les enjeux sociaux et émotionnels auxquels sont confrontés les adolescents aujourd'hui.</p>
+                </div>
+
+                <div class="audience-card fade-in">
+                    <div class="audience-icon">🎭</div>
+                    <h3>Amateurs de comédies musicales</h3>
+                    <p>Les fans de théâtre musical seront séduits par l'esthétique contrastée entre le quotidien réaliste du lycée et le monde fantastique de l'Isekai.</p>
+                </div>
+
+                <div class="audience-card fade-in">
+                    <div class="audience-icon">💙</div>
+                    <h3>Sensibilisés aux thématiques sociales</h3>
+                    <p>Les spectateurs engagés ou touchés par des sujets comme le harcèlement, l'estime de soi, ou la santé mentale trouveront dans cette histoire un message fort et universel.</p>
+                </div>
+            </div>
+
+            <div class="audience-highlight">
+                <h3>Large potentiel d'audience</h3>
+                <p>Avec une narration qui mêle réalisme et fantastique, <strong>Le Monde de Gabriel</strong> touche à des thématiques universelles tout en adoptant une esthétique moderne et captivante. Il s'adresse autant à un public scolaire qu'à des spectateurs de tous âges intéressés par une histoire riche en émotions et en symboles.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chansons Section -->
+    <section id="chansons" class="section chansons">
+        <div class="container">
+            <h2 class="section-title">Les Chansons</h2>
+            <div class="section-subtitle">Premier Opéra POP</div>
+
+            <div class="songs-grid">
+                <div class="song-card fade-in">
+                    <div class="song-number">01</div>
+                    <h3>VIENS</h3>
+                    <p>Gabriel</p>
+                </div>
+
+                <div class="song-card fade-in">
+                    <div class="song-number">02</div>
+                    <h3>C'EST LA RENTRÉE</h3>
+                    <p>Ensemble</p>
+                </div>
+
+                <div class="song-card fade-in highlight-song">
+                    <div class="song-number">03</div>
+                    <h3>SI JE DIS STOP TU FAIS PAS</h3>
+                    <p>Nathan & ensemble</p>
+                    <span class="song-badge">Premier Single</span>
+                </div>
+
+                <div class="song-card fade-in">
+                    <div class="song-number">04</div>
+                    <h3>MACHIAVEL</h3>
+                    <p>Kenzo & ensemble</p>
+                </div>
+
+                <div class="song-card fade-in">
+                    <div class="song-number">05</div>
+                    <h3>UN HORIZON COUPÉ</h3>
+                    <p>Gabriel</p>
+                </div>
+
+                <div class="song-card fade-in">
+                    <div class="song-number">06</div>
+                    <h3>REGARDE DANS LE MIROIR</h3>
+                    <p>Kenzo & Dame Michiko</p>
+                </div>
+
+                <div class="song-card fade-in">
+                    <div class="song-number">07</div>
+                    <h3>EMAKI</h3>
+                    <p>Sakura</p>
+                </div>
+
+                <div class="song-card fade-in">
+                    <div class="song-number">08</div>
+                    <h3>LA JUNGLE</h3>
+                    <p>Ensemble</p>
+                </div>
+
+                <div class="song-card fade-in">
+                    <div class="song-number">09</div>
+                    <h3>LE MONDE DE GABRIEL</h3>
+                    <p>Gabriel</p>
+                </div>
+
+                <div class="song-card fade-in">
+                    <div class="song-number">10</div>
+                    <h3>LES BLESSURES DE MON ENFANCE</h3>
+                    <p>Gabriel, les ombres & Dame Michiko</p>
+                </div>
+
+                <div class="song-card fade-in">
+                    <div class="song-number">11</div>
+                    <h3>VA-T-EN FRERO T'ES PAS CLASS'</h3>
+                    <p>Hotaru & Dame Michiko</p>
+                </div>
+
+                <div class="song-card fade-in">
+                    <div class="song-number">12</div>
+                    <h3>LE BRASIER</h3>
+                    <p>Gabriel</p>
+                </div>
+
+                <div class="song-card fade-in">
+                    <div class="song-number">13</div>
+                    <h3>L'AIR DU TEMPS</h3>
+                    <p>Dame Michiko</p>
+                </div>
+
+                <div class="song-card fade-in">
+                    <div class="song-number">14</div>
+                    <h3>ISEKAI</h3>
+                    <p>Gabriel</p>
+                </div>
+
+                <div class="song-card fade-in">
+                    <div class="song-number">15</div>
+                    <h3>SORTIR DU SILENCE</h3>
+                    <p>Sakura & Kenzo</p>
+                </div>
+
+                <div class="song-card fade-in">
+                    <div class="song-number">16</div>
+                    <h3>SOUVENIR</h3>
+                    <p>Kenzo</p>
+                </div>
+
+                <div class="song-card fade-in">
+                    <div class="song-number">17</div>
+                    <h3>TOUT A CHANGÉ</h3>
+                    <p>Ensemble</p>
+                </div>
+
+                <div class="song-card fade-in">
+                    <div class="song-number">18</div>
+                    <h3>RESPECT</h3>
+                    <p>Ensemble</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inspirations Section -->
+    <section id="inspirations" class="section inspirations">
+        <div class="container">
+            <h2 class="section-title">Inspirations et Références</h2>
+
+            <div class="inspirations-content">
+                <div class="inspiration-text fade-in">
+                    <h3>🎬 Origine du projet</h3>
+                    <p>Ce projet s'est nourri de multiples influences, issues aussi bien de l'univers des comédies musicales que de la littérature, du cinéma ou encore de l'animation.</p>
+                </div>
+
+                <div class="inspiration-categories">
+                    <div class="inspiration-category fade-in">
+                        <h4>Comédies Musicales</h4>
+                        <ul>
+                            <li><strong>Le Moulin Rouge & Grease</strong> - Dramaturgie, mise en scène et scénographie</li>
+                            <li><strong>West Side Story</strong> - Tensions entre groupes rivaux et enjeux culturels</li>
+                        </ul>
+                    </div>
+
+                    <div class="inspiration-category fade-in">
+                        <h4>Cinéma & Littérature</h4>
+                        <ul>
+                            <li><strong>Le Cercle des poètes disparus</strong> - Briser les codes, trouver sa propre voie</li>
+                            <li><strong>Cyrano de Bergerac</strong> - Le génie des mots et la créativité verbale</li>
+                            <li><strong>Star Wars</strong> - La découverte d'une force intime</li>
+                        </ul>
+                    </div>
+
+                    <div class="inspiration-category fade-in">
+                        <h4>Animation Japonaise</h4>
+                        <ul>
+                            <li><strong>Makoto Shinkai</strong> (Your Name, Suzume) - Poésie visuelle et introspection</li>
+                            <li><strong>One Piece Red</strong> - La voix intérieure et le dialogue avec soi-même</li>
+                        </ul>
+                    </div>
+
+                    <div class="inspiration-category fade-in">
+                        <h4>Dimension Spirituelle</h4>
+                        <ul>
+                            <li><strong>Le Retour</strong> - Quêtes intérieures et parcours d'éveil</li>
+                            <li><strong>Rencontre avec la Splendeur des Lettres Hébraïques</strong> - Acceptation de ses peurs et émotions</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="musical-style fade-in">
+                    <h3>🎵 Style Musical</h3>
+                    <p>Le style musical s'inspire largement de l'univers culturel des jeunes :</p>
+                    <div class="style-grid">
+                        <div class="style-item">
+                            <span class="style-icon">🎤</span>
+                            <strong>RAP</strong>
+                            <p>Énergie urbaine et urgence des situations</p>
+                        </div>
+                        <div class="style-item">
+                            <span class="style-icon">📝</span>
+                            <strong>SLAM</strong>
+                            <p>Poésie directe où chaque mot résonne</p>
+                        </div>
+                        <div class="style-item">
+                            <span class="style-icon">🎹</span>
+                            <strong>POP / J-POP</strong>
+                            <p>Univers manga et Japan animation</p>
+                        </div>
+                        <div class="style-item">
+                            <span class="style-icon">🎻</span>
+                            <strong>LYRIQUE</strong>
+                            <p>Référence à "Butterfly" de Puccini</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Galerie d'Inspirations avec Cadres -->
+                <div class="inspiration-gallery fade-in">
+                    <h3>🎬 Galerie d'Inspirations</h3>
+                    <div class="gallery-grid">
+                        <div class="frame-card fade-in">
+                            <div class="frame-outer">
+                                <div class="frame-inner">
+                                    <div class="poster-wrapper">
+                                        <img src="images/Moulin rouge.jpg" alt="Moulin Rouge" class="poster-image">
+                                        <div class="glass-overlay"></div>
+                                    </div>
+                                </div>
+                                <div class="frame-label">
+                                    <h4>Moulin Rouge</h4>
+                                    <p>Spectacle total, transitions explosives</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="frame-card fade-in">
+                            <div class="frame-outer">
+                                <div class="frame-inner">
+                                    <div class="poster-wrapper">
+                                        <img src="images/Grease.jpg" alt="Grease" class="poster-image">
+                                        <div class="glass-overlay"></div>
+                                    </div>
+                                </div>
+                                <div class="frame-label">
+                                    <h4>Grease</h4>
+                                    <p>Dynamisme et changements de tableaux</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="frame-card fade-in">
+                            <div class="frame-outer">
+                                <div class="frame-inner">
+                                    <div class="poster-wrapper">
+                                        <img src="images/West Side Story.jpg" alt="West Side Story" class="poster-image">
+                                        <div class="glass-overlay"></div>
+                                    </div>
+                                </div>
+                                <div class="frame-label">
+                                    <h4>West Side Story</h4>
+                                    <p>Tensions entre groupes rivaux</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="frame-card fade-in">
+                            <div class="frame-outer">
+                                <div class="frame-inner">
+                                    <div class="poster-wrapper">
+                                        <img src="images/Le Cercle Des Poetes Disparus.jpg" alt="Le Cercle des Poètes Disparus" class="poster-image">
+                                        <div class="glass-overlay"></div>
+                                    </div>
+                                </div>
+                                <div class="frame-label">
+                                    <h4>Le Cercle des Poètes Disparus</h4>
+                                    <p>Casser les codes, trouver sa voie</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="frame-card fade-in">
+                            <div class="frame-outer">
+                                <div class="frame-inner">
+                                    <div class="poster-wrapper">
+                                        <img src="images/Cyrano.jpg" alt="Cyrano de Bergerac" class="poster-image">
+                                        <div class="glass-overlay"></div>
+                                    </div>
+                                </div>
+                                <div class="frame-label">
+                                    <h4>Cyrano de Bergerac</h4>
+                                    <p>Le génie des mots</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="frame-card fade-in">
+                            <div class="frame-outer">
+                                <div class="frame-inner">
+                                    <div class="poster-wrapper">
+                                        <img src="images/Star Wars.jpg" alt="Star Wars" class="poster-image">
+                                        <div class="glass-overlay"></div>
+                                    </div>
+                                </div>
+                                <div class="frame-label">
+                                    <h4>Star Wars</h4>
+                                    <p>La force intérieure</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="frame-card fade-in">
+                            <div class="frame-outer">
+                                <div class="frame-inner">
+                                    <div class="poster-wrapper">
+                                        <img src="images/Suzume.jpg" alt="Suzume" class="poster-image">
+                                        <div class="glass-overlay"></div>
+                                    </div>
+                                </div>
+                                <div class="frame-label">
+                                    <h4>Suzume</h4>
+                                    <p>Poésie visuelle, émotions pures</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="frame-card fade-in">
+                            <div class="frame-outer">
+                                <div class="frame-inner">
+                                    <div class="poster-wrapper">
+                                        <img src="images/Your Name.jpg" alt="Your Name" class="poster-image">
+                                        <div class="glass-overlay"></div>
+                                    </div>
+                                </div>
+                                <div class="frame-label">
+                                    <h4>Your Name</h4>
+                                    <p>Introspection et connexion</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="frame-card fade-in">
+                            <div class="frame-outer">
+                                <div class="frame-inner">
+                                    <div class="poster-wrapper">
+                                        <img src="images/One Piece Red.jpg" alt="One Piece Red" class="poster-image">
+                                        <div class="glass-overlay"></div>
+                                    </div>
+                                </div>
+                                <div class="frame-label">
+                                    <h4>One Piece Red</h4>
+                                    <p>La voix intérieure, dialogue avec soi</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="frame-card fade-in">
+                            <div class="frame-outer">
+                                <div class="frame-inner">
+                                    <div class="poster-wrapper">
+                                        <img src="images/Madama Butterfly.jpg" alt="Madama Butterfly" class="poster-image">
+                                        <div class="glass-overlay"></div>
+                                    </div>
+                                </div>
+                                <div class="frame-label">
+                                    <h4>Madama Butterfly</h4>
+                                    <p>Référence lyrique, Puccini</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Équipe Section -->
+    <section id="equipe" class="section equipe">
+        <div class="container">
+            <h2 class="section-title">Notre Équipe</h2>
+
+            <div class="team-highlight fade-in">
+                <div class="team-profile">
+                    <div class="profile-header">
+                        <h3>Anne-Chrystel Mercy</h3>
+                        <p class="profile-role">Auteure - Compositrice - Interprète - Metteure en scène - Directrice artistique - Speaker TEDx</p>
+                    </div>
+                    <div class="profile-content">
+                        <p>Anne-Chrystel est une auteure et compositrice passionnée dont la créativité et la sensibilité ont nourri un parcours artistique singulier. Initiée au piano dès l'âge de 5 ans, elle développe très jeune une fascination pour l'écriture et la création.</p>
+                        <p>Touchée de près par les enjeux du harcèlement scolaire, elle décide de mettre son talent au service d'une cause qui lui tient à cœur : écrire et produire le premier opéra POP, une fresque musicale et sociétale sur ce thème, dans un univers manga, pour encourager les jeunes à briser le silence.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="team-grid">
+                <div class="team-card fade-in">
+                    <h4>Arrangements</h4>
+                    <p>Mickaël Winter</p>
+                </div>
+
+                <div class="team-card fade-in">
+                    <h4>Chorégraphie</h4>
+                    <p>Cécile Chaduteau</p>
+                </div>
+
+                <div class="team-card fade-in">
+                    <h4>Scénographie</h4>
+                    <p>Stéphanie Jarre</p>
+                </div>
+
+                <div class="team-card fade-in">
+                    <h4>Lumière</h4>
+                    <p>Bruno Loury</p>
+                </div>
+
+                <div class="team-card fade-in">
+                    <h4>Mangaka</h4>
+                    <p>Shaos</p>
+                </div>
+
+                <div class="team-card fade-in">
+                    <h4>Production Exécutive</h4>
+                    <p>Sam Smadja - SB Production</p>
+                    <p>Dominique Milegia</p>
+                </div>
+
+                <div class="team-card fade-in">
+                    <h4>Communication</h4>
+                    <p>Olivia Goldman - Goldman Communication</p>
+                    <p>Joseph Di Marco</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Avancement Section -->
+    <section id="avancement" class="section avancement">
+        <div class="container">
+            <h2 class="section-title">Avancement du Projet</h2>
+
+            <div class="project-status fade-in">
+                <div class="status-card-simple">
+                    <h3>🎵 Premier Single</h3>
+                    <h4>"Si je dis STOP tu fais pas"</h4>
+                    <p>Sorti le <strong>17 octobre</strong> sur toutes les plateformes</p>
+                    <p>Le clip paraîtra le <strong>6 novembre</strong>, à l'occasion de la <strong>Journée nationale de lutte contre le harcèlement scolaire</strong>.</p>
+                    <div class="status-highlight">
+                        <p><em>Ce titre traduit notre volonté d'accompagner, de mettre des mots, de tendre la main, et d'offrir des clés pour oser se positionner face aux situations de harcèlement.</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+
+            <div class="contact-wrapper">
+                <div class="contact-message fade-in">
+                    <div class="butterfly-symbol">
+                        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50,50 Q30,30 20,40 Q10,50 20,60 Q30,70 50,50" fill="#00d4ff" opacity="0.8"/>
+                            <path d="M50,50 Q70,30 80,40 Q90,50 80,60 Q70,70 50,50" fill="#00d4ff" opacity="0.8"/>
+                        </svg>
+                    </div>
+                    <h3>MEET MERCY PRODUCTION</h3>
+                    <p class="tagline">PARTAGEONS NOS ÉMOTIONS</p>
+
+                    <div class="manifesto">
+                        <p>Choisir de ne plus subir,</p>
+                        <p>Choisir de ne plus faire subir,</p>
+                        <p>Choisir de ne plus laisser-faire subir.</p>
+                    </div>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-card fade-in">
+                        <h4>Porteurs du projet</h4>
+                        <div class="contact-person">
+                            <p><strong>Anne-Chrystel MERCY</strong></p>
+                            <p>📞 +33(0)6.85.67.39.91</p>
+                            <p>✉️ <a href="mailto:annechrystel@meetmercyproduction.com">annechrystel@meetmercyproduction.com</a></p>
+                        </div>
+                        <div class="contact-person">
+                            <p><strong>Serge BENAIM</strong></p>
+                            <p>📞 +33(0)6.07.64.64.07</p>
+                            <p>✉️ <a href="mailto:serge.benaim@esl-conseil.fr">serge.benaim@esl-conseil.fr</a></p>
+                        </div>
+                    </div>
+
+                    <div class="social-links fade-in">
+                        <h4>Suivez-nous</h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/people/Le-Monde-de-Gabriel/61581206890837/" target="_blank" rel="noopener noreferrer" class="social-icon facebook" aria-label="Facebook">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/lemondedegabrielofficiel/" target="_blank" rel="noopener noreferrer" class="social-icon instagram" aria-label="Instagram">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.youtube.com/@lemondedegabriel" target="_blank" rel="noopener noreferrer" class="social-icon youtube" aria-label="YouTube">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.linkedin.com/in/anne-chrystel-mercy-a1a028327/" target="_blank" rel="noopener noreferrer" class="social-icon linkedin" aria-label="LinkedIn">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.tiktok.com/@lemondedegabriel" target="_blank" rel="noopener noreferrer" class="social-icon tiktok" aria-label="TikTok">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="support-association fade-in">
+                    <p><strong>Le Monde de Gabriel</strong> soutient l'association <strong>Stop Harcèlement Flow</strong></p>
+                </div>
+
+                <!-- Logos partenaires -->
+                <div class="partner-logos fade-in">
+                    <div class="logo-container">
+                        <img src="images/Meet mercy production.jpg" alt="Meet Mercy Production" class="partner-logo">
+                    </div>
+                    <div class="logo-container">
+                        <img src="images/Stop and flow. Stop au harcèlement scolaire.jpg" alt="Stop Harcèlement Flow" class="partner-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Meet Mercy Production - Tous droits réservés</p>
+            <p>Sur une idée originale d'Anne-Chrystel Mercy</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
